@@ -1,9 +1,8 @@
 
 function slugify(title) {
   let newtitle = title.toLowerCase().split(" ");
-  /* перетворив рядок на маленький регістр та перетворив на масив*/
   return newtitle.join('-');
-  /*потім викликаю масив із дефісом*/
+  
 }
 
 
