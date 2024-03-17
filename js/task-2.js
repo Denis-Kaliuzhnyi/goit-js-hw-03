@@ -1,7 +1,6 @@
 
 function makeArray(firstArray, secondArray, maxLength) {
-//    /* алгоритм : перетворити кожний елемент на масив, обмежити кількість довжиною, */
-const newArray = [firstArray, secondArray]
+const newArray = firstArray.concat(secondArray);
 if (newArray.length > maxLength) {
     return newArray.slice(0, maxLength);
 } else {newArray.length < maxLength
@@ -21,4 +20,3 @@ console.log(makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus", "Venus"], 0));
 
 // Якщо кількість елементів у новому масиві перевищує maxLength, функція повинна повернути копію масиву з довжиною maxLength елементів.
 // В іншому випадку функція повинна повернути весь новий масив.
-
